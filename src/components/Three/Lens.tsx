@@ -5,18 +5,18 @@ import { Sphere } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 export const Lens = () => {
-  const cubeRender = new THREE.WebGLCubeRenderTarget(256, {
-    format: THREE.RGBAFormat,
-    generateMipmaps: true,
-    minFilter: THREE.LinearMipMapLinearFilter,
-  });
+  // const cubeRender = new THREE.WebGLCubeRenderTarget(256, {
+  //   format: THREE.RGBAFormat,
+  //   generateMipmaps: true,
+  //   minFilter: THREE.LinearMipMapLinearFilter,
+  // });
 
   // const cubeCamera = new THREE.CubeCamera(0.1, 10, cubeRender);
 
   const lens = {
-    extensions: {
-      derivatives: "#extension GL_OES_standard_derivatives : enable",
-    },
+    // extensions: {
+    //   derivatives: "#extension GL_OES_standard_derivatives : enable",
+    // },
     side: THREE.DoubleSide,
     uniforms: {
       time: { value: 0 },
